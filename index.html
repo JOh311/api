@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather API Demo</title>
+    <title>Movie Database API Demo</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Weather API Demonstration</h1>
+        <h1>Movie Database API Demonstration</h1>
         <p id="student-info"></p>
     </header>
     
     <main>
         <section class="search-container">
-            <h2>Search for Weather by City</h2>
+            <h2>Search for Movies</h2>
             <div class="input-group">
-                <input type="text" id="city-input" placeholder="Enter city name...">
+                <input type="text" id="movie-input" placeholder="Enter movie title...">
                 <button id="search-btn">Search</button>
             </div>
         </section>
         
-        <section class="weather-container">
-            <div id="weather-data">
-                <!-- Weather data will be displayed here -->
+        <section class="movie-container">
+            <div id="movie-results">
+                <!-- Movie results will be displayed here -->
             </div>
+        </section>
+        
+        <section id="movie-details" class="hidden">
+            <!-- Movie details will be displayed here -->
         </section>
         
         <section class="references">
             <h3>API Documentation Reference</h3>
-            <p>This project was created by following the <a href="https://openweathermap.org/guide" target="_blank">OpenWeatherMap API documentation</a>.</p>
+            <p>This project was created by following the <a href="https://developers.themoviedb.org/3/getting-started/introduction" target="_blank">The Movie Database API documentation</a>.</p>
         </section>
     </main>
     
